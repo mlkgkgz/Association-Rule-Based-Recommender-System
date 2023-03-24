@@ -214,3 +214,21 @@ check_id(df_g, 20674)
 #['BLUE POLKADOT CUP']
 #['GREEN POLKADOT PLATE ']
 #['BLUE POLKADOT BOWL']
+
+# İş problemindeki asıl istenen 3 kullanıcıya önerilecek isimler:
+
+#Kullanıcı 1’in sepetinde bulunan ürünün id'si: 21987
+check_id(df_g, 21987) # ['PACK OF 6 SKULL PAPER CUPS'] sepetinde bu ürün var.
+arl_recommender(rules, 21987, 1) #21989 stok kodlu ürünü önerdi.
+check_id(df_g, 21989) #['PACK OF 20 SKULL PAPER NAPKINS']
+
+#Kullanıcı 2’in sepetinde bulunan ürünün id'si : 23235
+check_id(df_g, 23235) # ['STORAGE TIN VINTAGE LEAF'] sepetinde bu ürün var.
+arl_recommender(rules, 23235, 1) #[23244] stok kodlu ürünü önerdi.
+check_id(df_g, 23244) #['ROUND STORAGE TIN VINTAGE LEAF']
+
+
+#Kullanıcı 3’in sepetinde bulunan ürünün id'si : 22747
+check_id(df_g, 22747)  #["POPPY'S PLAYHOUSE BATHROOM"] sepetinde bu ürün var.
+arl_recommender(rules, 22747, 1) #[22746] stok kodlu ürünü önerdi.
+check_id(df_g, 22746) # ["POPPY'S PLAYHOUSE LIVINGROOM "]
